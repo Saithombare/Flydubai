@@ -17,7 +17,7 @@ The Basic Understanding of the dataset is :
 2. Passengers: If the same person travels from DXB-BOM, and then returns BOM-DXB it is counted as 2 passengers
 3. Journey : journey is the combination of origin destinations (If one pnr have two combinations of OD then Counted as 2 Journeys.)
 
-The Column in the Dataset are :
+The Column in the Base Dataset are :
 year(departure_dt)	
 month(departure_dt)	
 from_airport	
@@ -28,7 +28,46 @@ res_book_dt_lcl_key
 departure_dt	
 journey_type	
 pax_type_cde	
-rev	booking
+rev	bookingwsq2
+
+The Column in the Ancillary Dataset are :
+pnr	
+leg_departure_date	
+od_flight_no	
+leg_flight_no	
+from_od	
+to_od	
+from_leg	
+to_leg	
+ssr_code	
+ssr_booked_date	
+ssr_booked_time	
+ssr_booked_time_utc	
+ssr_booked_channel	
+ssr_paid_revenue	
+fare_brand_id	
+booking_channel_id	
+res_seg_status	
+ptc_id	
+charge_status	
+Fare Brand 
+
+flydubai dataset column Details :
+1. pnr :
+Passenger Name Record is the unique no. for each booking.
+Valid
+Mismatched
+
+2. year(departure_dt) : Departure Year
+Valid
+Mismatched
+Max
+Min
+
+3.
+
+
+
 
 
 

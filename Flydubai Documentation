@@ -28,7 +28,8 @@ res_book_dt_lcl_key
 departure_dt	
 journey_type	
 pax_type_cde	
-rev	bookingwsq2
+rev	
+booking
 
 The Column in the Ancillary Dataset are :
 pnr	
@@ -64,7 +65,64 @@ Mismatched
 Max
 Min
 
-3.
+3. month(departure_dt) : Departure Month
+Valid
+Mismatched
+Max
+Min
+
+4. from_airport : Origin City
+Valid
+Mismatched
+
+5. to_airport	: Destination City
+Valid
+Mismatched
+
+6. confirmation_num	: Passenger Name Record is the unique no. for each booking (PNR)
+Valid
+Mismatched
+
+7. person_org_id : Unique identifier for the customer
+Valid
+Mismatched
+
+8. res_book_dt_lcl_key : At what date flight is booked
+Valid
+Mismatched
+Max
+Min
+
+9. departure_dt	: Departure Date
+Valid
+Mismatched
+Max
+Min
+
+10. journey_type	: Journey Type
+Total Unique : OW : One Way
+               RT : Return
+               
+11. pax_type_cde	: Passenger Type
+Total Unique : ADT : Adult
+               CHD : Child
+               INF : Infant
+
+12. rev	: Total Revenue
+
+13. booking : No. of passengers
+
+14. ssr_code	: Ancillary Type
+Total Unique :
+
+15.
+
+
+
+
+
+
+
 
 
 

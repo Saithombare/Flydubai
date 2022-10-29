@@ -1,0 +1,35 @@
+flydubai Dataset
+Problem Statement: Increase the revenue by increasing ancillary sell.
+
+Data :
+flydubai Sep_Oct 21 # Base file 1
+flyDubai Nov21_Dec21 # Base file 2
+flydubai Jan22_Feb22 # Base file 3
+flydubai SSR Sep21_Feb22 # Ancillary data file
+
+About Dataset :
+The flydubai dataset is provided from the flydubai official CRM System. The dataset is in the form of csv files, Where 3 base files contains all the bookings from 
+September 2021 to February 2022 and one Ancillary data file contains the only ancillary buying Bookings (Anc bookings are present in base booking data). The unique
+identifier in the dataset is PNR Number. One Unique booking have one qnique PNR. In dataset total 8 unique Ancillary types.
+
+The Basic Understanding of the dataset is :
+1. Bookings are Distinct PNR count
+2. Passengers: If the same person travels from DXB-BOM, and then returns BOM-DXB it is counted as 2 passengers
+3. Journey : journey is the combination of origin destinations (If one pnr have two combinations of OD then Counted as 2 Journeys.)
+
+The Column in the Dataset are :
+year(departure_dt)	
+month(departure_dt)	
+from_airport	
+to_airport	
+confirmation_num	
+person_org_id	
+res_book_dt_lcl_key	
+departure_dt	
+journey_type	
+pax_type_cde	
+rev	booking
+
+
+
+

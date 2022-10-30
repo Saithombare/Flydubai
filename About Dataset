@@ -54,68 +54,264 @@ charge_status
 Fare Brand 
 
 flydubai dataset column Details :
-1. pnr :
-Passenger Name Record is the unique no. for each booking.
-Valid
-Mismatched
 
-2. year(departure_dt) : Departure Year
-Valid
-Mismatched
-Max
-Min
+confirmation_num : PNR- Unique identifier for each booking.
+ count     521532
+unique    368441
+top       X7471E
+freq           5
+Name: confirmation_num, dtype: object
 
-3. month(departure_dt) : Departure Month
-Valid
-Mismatched
-Max
-Min
+from_airport : Origin
+ count     521532
+unique       112
+top          DXB
+freq      212311
+Name: from_airport, dtype: object
 
-4. from_airport : Origin City
-Valid
-Mismatched
+to_airport : Destination
+ count     521532
+unique       112
+top          DXB
+freq      231739
+Name: to_airport, dtype: object
 
-5. to_airport	: Destination City
-Valid
-Mismatched
+year(departure_dt) : Departure Year
+ count    521532.000000
+mean       2021.327456
+std           0.469286
+min        2021.000000
+25%        2021.000000
+50%        2021.000000
+75%        2022.000000
+max        2022.000000
+Name: year(departure_dt), dtype: float64
 
-6. confirmation_num	: Passenger Name Record is the unique no. for each booking (PNR)
-Valid
-Mismatched
+month(departure_dt) : Departure Month
+ count    521532.000000
+mean          7.675487
+std           4.402647
+min           1.000000
+25%           2.000000
+50%          10.000000
+75%          11.000000
+max          12.000000
+Name: month(departure_dt), dtype: float64
 
-7. person_org_id : Unique identifier for the customer
-Valid
-Mismatched
+res_book_dt_lcl_key : Flight Booking Date
+ count                  521532
+unique                    522
+top       2021-10-12 00:00:00
+freq                     4294
+first     2019-08-21 00:00:00
+last      2022-02-28 00:00:00
+Name: res_book_dt_lcl_key, dtype: object
 
-8. res_book_dt_lcl_key : At what date flight is booked
-Valid
-Mismatched
-Max
-Min
+departure_dt : Departure Date
+ count                  521532
+unique                    181
+top       2021-12-04 00:00:00
+freq                     4625
+first     2021-09-01 00:00:00
+last      2022-02-28 00:00:00
+Name: departure_dt, dtype: object
 
-9. departure_dt	: Departure Date
-Valid
-Mismatched
-Max
-Min
+journey_type : Journey Type OneWay and Return
+ count     521532
+unique         2
+top           RT
+freq      323944
+Name: journey_type, dtype: object
 
-10. journey_type	: Journey Type
-Total Unique : OW : One Way
-               RT : Return
-               
-11. pax_type_cde	: Passenger Type
-Total Unique : ADT : Adult
-               CHD : Child
-               INF : Infant
+pax : Total Passenger Count
+ count    521532.000000
+mean          1.515125
+std           0.965120
+min           1.000000
+25%           1.000000
+50%           1.000000
+75%           2.000000
+max           9.000000
+Name: pax, dtype: float64
 
-12. rev	: Total Revenue
+rev : Total Base Revenue
+ count    521532.000000
+mean       1402.354356
+std        1420.565201
+min           0.000000
+25%         633.850000
+50%         982.240000
+75%        1643.222500
+max       39888.800000
+Name: rev, dtype: float64
 
-13. booking : No. of passengers
+leg_departure_date
+ count                            259559
+unique                              181
+top       1970-01-01 00:00:00.020211204
+freq                               2440
+first     1970-01-01 00:00:00.020210901
+last      1970-01-01 00:00:00.020220228
+Name: leg_departure_date, dtype: object
 
-14. ssr_code	: Ancillary Type
-Total Unique :
+od_flight_no
+ count     259559
+unique      4772
+top         1798
+freq        4388
+Name: od_flight_no, dtype: object
 
-15.
+leg_flight_no
+ count    259559.000000
+mean       1955.610547
+std        2637.453085
+min           1.000000
+25%         440.000000
+50%         916.000000
+75%        1787.000000
+max        8970.000000
+Name: leg_flight_no, dtype: float64
+
+from_leg
+ count     259559
+unique       107
+top          DXB
+freq      126143
+Name: from_leg, dtype: object
+
+to_leg
+ count     259559
+unique       107
+top          DXB
+freq      132875
+Name: to_leg, dtype: object
+
+ssr_code
+ count     259559
+unique        14
+top         XLGR
+freq       56730
+Name: ssr_code, dtype: object
+
+ssr_booked_date
+ count                            259559
+unique                              400
+top       1970-01-01 00:00:00.020211124
+freq                               2761
+first     1970-01-01 00:00:00.020200914
+last      1970-01-01 00:00:00.020220406
+Name: ssr_booked_date, dtype: object
+
+ssr_booked_time
+ count                  259559
+unique                 121810
+top       2021-10-12 11:59:18
+freq                       48
+first     2020-09-14 13:53:17
+last      2022-04-06 14:32:53
+Name: ssr_booked_time, dtype: object
+
+ssr_booked_time_utc
+ count                    259559
+unique                   121810
+top       2021-10-12 07:59:18.0
+freq                         48
+Name: ssr_booked_time_utc, dtype: object
+
+ssr_booked_channel
+ count    259559.000000
+mean          4.531902
+std           4.460331
+min           1.000000
+25%           2.000000
+50%           2.000000
+75%           5.000000
+max          19.000000
+Name: ssr_booked_channel, dtype: float64
+
+ssr_paid_revenue
+ count    259559.000000
+mean         86.286492
+std          80.282667
+min        -514.220000
+25%          30.360000
+50%          55.100000
+75%         145.000000
+max         735.000000
+Name: ssr_paid_revenue, dtype: float64
+
+fare_brand_id
+ count    259559.000000
+mean          5.781502
+std           0.565736
+min           4.000000
+25%           5.000000
+50%           6.000000
+75%           6.000000
+max           7.000000
+Name: fare_brand_id, dtype: float64
+
+booking_channel_id
+ count    259559.0
+mean          2.0
+std           0.0
+min           2.0
+25%           2.0
+50%           2.0
+75%           2.0
+max           2.0
+Name: booking_channel_id, dtype: float64
+
+res_seg_status
+ count    259559.000000
+mean          5.113346
+std           0.677337
+min           1.000000
+25%           5.000000
+50%           5.000000
+75%           5.000000
+max           9.000000
+Name: res_seg_status, dtype: float64
+
+ptc_id
+ count    259559.000000
+mean          1.332021
+std           1.244902
+min           1.000000
+25%           1.000000
+50%           1.000000
+75%           1.000000
+max           6.000000
+Name: ptc_id, dtype: float64
+
+charge_status
+ count    259559.000000
+mean          0.952003
+std           0.213760
+min           0.000000
+25%           1.000000
+50%           1.000000
+75%           1.000000
+max           1.000000
+Name: charge_status, dtype: float64
+
+Fare Brand 
+ count     259559
+unique         4
+top        Value
+freq      164229
+Name: Fare Brand , dtype: object
+
+PAX
+ count    259559.000000
+mean          2.177698
+std           1.461571
+min           1.000000
+25%           1.000000
+50%           2.000000
+75%           3.000000
+max           9.000000
+Name: PAX, dtype: float64
 
 
 
